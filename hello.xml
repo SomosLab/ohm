@@ -1,7 +1,7 @@
   <context>
     <input pattern="* (hello|hi|hola) *">
       <context if="full($UserName)" modal="true">
-          <output value="¡Hola, $UserName! Soy Ohm, el asistente virtual de Gestión Humana en Financiera oh! y estoy para responder cualquier consulta que tengas." />
+          <output value="¡Hola $UserName!, soy Ohm, el asistente virtual de Gestión Humana en Financiera oh! y estoy para responder cualquier consulta que tengas." />
           <input pattern="$Text">
             <var name="Questions" value="$Text" />
             <output value="¡Déjame buscar la información y te respondo lo antes posible!"/>
@@ -10,7 +10,7 @@
       
       
       <context modal="true" if="empty($UserName)">
-        <output value="Hola Soy Ohm, el asistente virtual de Gestión Humana en Financiera oh!, por favor escribe tu nombre para confirmar tus datos."/>
+        <output value="Hola, soy Ohm, el asistente virtual de Gestión Humana en Financiera oh!, por favor escribe tu nombre completo para confirmar tus datos."/>
         <input pattern="$Text">
           <var name="UserName" value="$Text" scope="user"/>
           <output value="¡Hola, $UserName! ¿En qué te puedo ayudar?"/>
@@ -33,7 +33,7 @@
     
     <input pattern="* (quien eres|como te llamas|cual es tu nombre) *">
       <context >
-        <output value="¡Hola, $UserName! Soy Ohm, el asistente virtual de Gestión Humana en Financiera oh! y estoy para responder cualquier consulta que tengas."/>
+        <output value="¡Hola $UserName!, soy Ohm, el asistente virtual de Gestión Humana en Financiera oh! y estoy para responder cualquier consulta que tengas."/>
          <input pattern="$Text">
           <var name="Whoes" value="$Text" />
           <output value="¡Déjame buscar la información y te respondo lo antes posible!"/>
@@ -42,7 +42,7 @@
     </input>
     <input pattern="* (llamar|telefono) *">
       <context >
-        <output value="¡Hola, $UserName! Soy Ohm, el asistente virtual de Gestión Humana en Financiera oh! los numeros de acceso son 873636, te podemos ayudar en algo más."/>
+        <output value="¡Hola $UserName!, soy Ohm, el asistente virtual de Gestión Humana en Financiera oh! los numeros de acceso son 873636, te podemos ayudar en algo más."/>
          <input pattern="$Text">
           <var name="Whoes" value="$Text" />
           <output value="¡Déjame buscar la información y te respondo lo antes posible!"/>
@@ -55,7 +55,7 @@
     
     <input pattern="* (como estas|como te encuentras) *">
       <context >
-        <output value="Hola $UserName estoy bien, ¿Te puedo ayudar en algo?"/>
+        <output value="Hola $UserName, estoy bien, ¿Te puedo ayudar en algo?"/>
          <input pattern="$Text">
           <var name="Whos" value="$Text" />
           <output value="¡Déjame buscar la información y te respondo lo antes posible!"/>
@@ -65,7 +65,7 @@
     
     <input pattern="* (como me ayudas| quieres ayudarme) *">
       <context >
-          <output value="¡Hola, $UserName! Soy Ohm, el asistente virtual de Gestión Humana en Financiera oh! y estoy para responder cualquier consulta que tengas."/>  
+          <output value="¡Hola, $UserName!, soy Ohm, el asistente virtual de Gestión Humana en Financiera oh! y estoy para responder cualquier consulta que tengas."/>  
            <input pattern="$Text">
             <var name="Whs" value="$Text" />
             <output value="¡Déjame buscar la información y te respondo lo antes posible!"/>
