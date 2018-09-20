@@ -1,6 +1,6 @@
   <context>
-    <input if="full($UserName)" pattern="* (hello|hi|hola) *"  >
-      <context  modal="true" >
+    <input  pattern="* (hello|hi|hola) *"  >
+      <context  if="full($UserName)" modal="true" >
           <output value="¡Hola $UserName!, soy Ohm, el asistente virtual de Gestión Humana en Financiera oh! y estoy para responder cualquier consulta que tengas." />
           <input pattern="$Text">
             <var name="Questions" value="$Text" />
